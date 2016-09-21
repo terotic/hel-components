@@ -1,0 +1,21 @@
+{
+  "name": "hel-components",
+  "authors": [
+    "Tero Tikkanen <tero.tikkanen@hel.fi>"
+  ],
+  "description": "re-usable pages and components",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-social": "^5.0.0"
+  }
+}
