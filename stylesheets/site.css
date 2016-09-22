@@ -8825,6 +8825,9 @@ input {
   margin: 18px auto;
   max-width: 400px; }
 
+.hel-login-logo {
+  height: 5em; }
+
 .login-method {
   margin-bottom: 1em; }
   .login-method .short-description {
@@ -8834,3 +8837,7 @@ input {
   border-bottom: 1px solid #0072c6;
   border-top: 1px solid #0072c6;
   padding-top: 1em; }
+
+.tab-content {
+  height: 20em;
+  overflow: auto; }

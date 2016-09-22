@@ -13,55 +13,168 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <link href="stylesheets/site.css" rel="stylesheet" />
-    <script src="javascripts/all.js"></script>
   </head>
 
   <body class="sign-in">
-    
-        <div class="hel-login-box">
-            <img src="images/helsinki-vaakuna-helfisininen.svg" width="75" class="logo" alt="Helsinki vaakuna helfisininen" />
-                <h5>Helsingin kaupunki</h5>
-                <h1>Kirjaudu sisään</h1>
-                <h4>Digitaalinen Helsinki - digi.hel.fi</h4>
-                <p class="doc">
-                    Tähän palveluun voit tunnistautua käyttämällä jotain näistä kirjautumistavoista.
-                </p>
-            <div class="hel-login-methods">
-                <div class="login-method login-method__primary">
-                    <a href="/sso/accounts/yletunnus/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd" class="btn btn-block btn-social btn-primary" style="background-color: #00b4c8; border-color: #00b4c8">
-                        <span>
-                    <img height="24" width="24" style="padding-bottom: 4px" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Ylen_logo.svg">
-                </span> Yle Tunnus
-                    </a>
-                    <div class="short-description">
-                        <p>Yle Tunnus on <b>kotimainen</b>, <b>helppo</b> ja <b>turvallinen</b> tapa kirjautua verkkopalveluihin. <a href="http://yle.fi/tunnus">Lue lisää</a></p>
-                    </div>
-                </div>
+    <div class="container">
+      <div class="row">
+  <div class="col-xs-12">
+    <div class="hel-login-box">
+  <img src='images/helsinki-vaakuna-helfisininen.svg' class="hel-login-logo">
+  <h5>Helsingin kaupunki</h5>
+  <h1>Kirjaudu sisään</h1>
+  <h4>Digitaalinen Helsinki - digi.hel.fi</h4>
+  <p class="doc">
+    Tähän palveluun voit tunnistautua käyttämällä jotain näistä kirjautumistavoista.
+  </p>
+  <div class="hel-login-methods">
+    <div class="login-method login-method__primary">
+      <a href="/sso/accounts/yletunnus/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd" class="btn btn-block btn-social btn-primary" style="background-color: #00b4c8; border-color: #00b4c8">
+        <span>
+            <img height="24" width="24" style="padding-bottom: 4px" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Ylen_logo.svg">
+        </span> Yle Tunnus
+      </a>
+      <div class="short-description">
+        <p>Yle Tunnus on <b>kotimainen</b>, <b>helppo</b> ja <b>turvallinen</b> tapa kirjautua verkkopalveluihin. <a href="http://yle.fi/tunnus">Lue lisää</a></p>
+      </div>
+    </div>
 
-                <div class="login-method">
-                    <a href="/sso/accounts/facebook/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd" class="btn btn-block btn-social btn-facebook">
-                        <span class="fa fa-facebook"></span> Facebook
-                    </a>
-                </div>
+    <div class="login-method">
+      <a href="/sso/accounts/facebook/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd" class="btn btn-block btn-social btn-facebook">
+        <span class="fa fa-facebook"></span> Facebook
+      </a>
+    </div>
 
-                <div class="login-method">
-                    <a href="/sso/accounts/github/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU" class="btn btn-block btn-social btn-github">
-                        <span class="fa fa-github"></span> GitHub
-                    </a>
-                </div>
+    <div class="login-method">
+      <a href="/sso/accounts/github/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU" class="btn btn-block btn-social btn-github">
+        <span class="fa fa-github"></span> GitHub
+      </a>
+    </div>
 
-                <div class="login-method">
-                    <a href="/sso/saml2/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU" class="btn btn-block btn-social btn-primary" style="background-color: #003380; border-color: #003380">
-                        <span class="helsinki-icon">
-                    <img height="24" width="24" style="padding-bottom: 4px" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Helsinki.vaakuna.svg">
-                </span> Helsingin kaupungin työntekijät
-                    </a>
-                </div>
-            </div>
-            <a href="#">Takaisin palveluun</a> | <a href="#">Kysy tai lähetä palautetta</a>
-        </div>
+    <div class="login-method">
+      <a href="/sso/saml2/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU" class="btn btn-block btn-social btn-primary" style="background-color: #003380; border-color: #003380">
+        <span class="helsinki-icon">
+            <img height="24" width="24" style="padding-bottom: 4px" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Helsinki.vaakuna.svg">
+        </span> Helsingin kaupungin työntekijät
+      </a>
+    </div>
+  </div>
+  <a href="#">Takaisin palveluun</a> | <a href="#">Kysy tai lähetä palautetta</a>
+</div>
 
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-xs-12">
+    <hr>
+    <h2>Dependencies</h2>
+    <dl class="dl-horizontal">
+      <dt>Bootstrap</dt>
+      <dd><a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass</a></dd>
+      <dt>Bootstrap theme</dt>
+      <dd><a href="https://github.com/terotic/bootstrap-hel-fi/tree/master/source/stylesheets/bootstrap-hel">Hel.fi bootstrap theme</a></dd>
+      <dt>Bootstrap Social</dt>
+      <dd><a href="https://github.com/lipis/bootstrap-social">Bootstrap Social</a></dd>
+      <dt>Font</dt>
+      <dd>For hel.fi theme you need to include licenced web font <a href="https://typekit.com/fonts/ff-karbid-web-pro">Karbid</a></dd>
+    </dl>
+  </div>
+</div>
 
+<div class="row">
+  <div class="col-xs-12">
+    <hr>
+    <h2>Code</h2>
+<div class="code">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
+    <li role="presentation"><a href="#scss" aria-controls="scss" role="tab" data-toggle="tab">SCSS</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="html">
+<pre class="highlight html"><code><span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"hel-login-box"</span><span style="color: #f4bf75">&gt;</span>
+  <span style="color: #f4bf75">&lt;img</span> <span style="color: #6a9fb5">src=</span><span style="color: #90a959">'images/helsinki-vaakuna-helfisininen.svg'</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"hel-login-logo"</span><span style="color: #f4bf75">&gt;</span>
+  <span style="color: #f4bf75">&lt;h5&gt;</span>Helsingin kaupunki<span style="color: #f4bf75">&lt;/h5&gt;</span>
+  <span style="color: #f4bf75">&lt;h1&gt;</span>Kirjaudu sisään<span style="color: #f4bf75">&lt;/h1&gt;</span>
+  <span style="color: #f4bf75">&lt;h4&gt;</span>Digitaalinen Helsinki - digi.hel.fi<span style="color: #f4bf75">&lt;/h4&gt;</span>
+  <span style="color: #f4bf75">&lt;p</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"doc"</span><span style="color: #f4bf75">&gt;</span>
+    Tähän palveluun voit tunnistautua käyttämällä jotain näistä kirjautumistavoista.
+  <span style="color: #f4bf75">&lt;/p&gt;</span>
+  <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"hel-login-methods"</span><span style="color: #f4bf75">&gt;</span>
+    <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"login-method login-method__primary"</span><span style="color: #f4bf75">&gt;</span>
+      <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"/sso/accounts/yletunnus/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd"</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"btn btn-block btn-social btn-primary"</span> <span style="color: #6a9fb5">style=</span><span style="color: #90a959">"background-color: #00b4c8; border-color: #00b4c8"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;span&gt;</span>
+            <span style="color: #f4bf75">&lt;img</span> <span style="color: #6a9fb5">height=</span><span style="color: #90a959">"24"</span> <span style="color: #6a9fb5">width=</span><span style="color: #90a959">"24"</span> <span style="color: #6a9fb5">style=</span><span style="color: #90a959">"padding-bottom: 4px"</span> <span style="color: #6a9fb5">src=</span><span style="color: #90a959">"https://upload.wikimedia.org/wikipedia/commons/3/35/Ylen_logo.svg"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;/span&gt;</span> Yle Tunnus
+      <span style="color: #f4bf75">&lt;/a&gt;</span>
+      <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"short-description"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;p&gt;</span>Yle Tunnus on <span style="color: #f4bf75">&lt;b&gt;</span>kotimainen<span style="color: #f4bf75">&lt;/b&gt;</span>, <span style="color: #f4bf75">&lt;b&gt;</span>helppo<span style="color: #f4bf75">&lt;/b&gt;</span> ja <span style="color: #f4bf75">&lt;b&gt;</span>turvallinen<span style="color: #f4bf75">&lt;/b&gt;</span> tapa kirjautua verkkopalveluihin. <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"http://yle.fi/tunnus"</span><span style="color: #f4bf75">&gt;</span>Lue lisää<span style="color: #f4bf75">&lt;/a&gt;&lt;/p&gt;</span>
+      <span style="color: #f4bf75">&lt;/div&gt;</span>
+    <span style="color: #f4bf75">&lt;/div&gt;</span>
+
+    <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"login-method"</span><span style="color: #f4bf75">&gt;</span>
+      <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"/sso/accounts/facebook/login/?next=/sso/oauth2/authorize/%3Fresponse_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fkerrokantasi.hel.fi%252Flogin%252Fhelsinki%252Freturn%26client_id%3DMtlMBFv9pWYqxC6JNOP0oUCrucdP0vOH6CXBxAAd"</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"btn btn-block btn-social btn-facebook"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"fa fa-facebook"</span><span style="color: #f4bf75">&gt;&lt;/span&gt;</span> Facebook
+      <span style="color: #f4bf75">&lt;/a&gt;</span>
+    <span style="color: #f4bf75">&lt;/div&gt;</span>
+
+    <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"login-method"</span><span style="color: #f4bf75">&gt;</span>
+      <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"/sso/accounts/github/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU"</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"btn btn-block btn-social btn-github"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"fa fa-github"</span><span style="color: #f4bf75">&gt;&lt;/span&gt;</span> GitHub
+      <span style="color: #f4bf75">&lt;/a&gt;</span>
+    <span style="color: #f4bf75">&lt;/div&gt;</span>
+
+    <span style="color: #f4bf75">&lt;div</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"login-method"</span><span style="color: #f4bf75">&gt;</span>
+      <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"/sso/saml2/login/?next=/sso/oauth2/authorize/%3Fstate%3DwtrmvGn2okmC%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fdigi.hel.ninja%252Faccounts%252Fhelsinki%252Flogin%252Fcallback%252F%26scope%3Dread%26client_id%3DCiwOImwskoZzOw7VdhAkm49qHIyKnJyZVq0MKhlU"</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"btn btn-block btn-social btn-primary"</span> <span style="color: #6a9fb5">style=</span><span style="color: #90a959">"background-color: #003380; border-color: #003380"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"helsinki-icon"</span><span style="color: #f4bf75">&gt;</span>
+            <span style="color: #f4bf75">&lt;img</span> <span style="color: #6a9fb5">height=</span><span style="color: #90a959">"24"</span> <span style="color: #6a9fb5">width=</span><span style="color: #90a959">"24"</span> <span style="color: #6a9fb5">style=</span><span style="color: #90a959">"padding-bottom: 4px"</span> <span style="color: #6a9fb5">src=</span><span style="color: #90a959">"https://upload.wikimedia.org/wikipedia/commons/c/c4/Helsinki.vaakuna.svg"</span><span style="color: #f4bf75">&gt;</span>
+        <span style="color: #f4bf75">&lt;/span&gt;</span> Helsingin kaupungin työntekijät
+      <span style="color: #f4bf75">&lt;/a&gt;</span>
+    <span style="color: #f4bf75">&lt;/div&gt;</span>
+  <span style="color: #f4bf75">&lt;/div&gt;</span>
+  <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"#"</span><span style="color: #f4bf75">&gt;</span>Takaisin palveluun<span style="color: #f4bf75">&lt;/a&gt;</span> | <span style="color: #f4bf75">&lt;a</span> <span style="color: #6a9fb5">href=</span><span style="color: #90a959">"#"</span><span style="color: #f4bf75">&gt;</span>Kysy tai lähetä palautetta<span style="color: #f4bf75">&lt;/a&gt;</span>
+<span style="color: #f4bf75">&lt;/div&gt;</span>
+
+</code></pre>      </div>
+    <div role="tabpanel" class="tab-pane" id="scss">
+<pre class="highlight scss"><code><span style="color: #f4bf75">.hel-login-box</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #303030">margin</span><span style="color: #d0d0d0">:</span> <span style="color: #303030">$padding-large-vertical</span> <span style="color: #303030">auto</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #303030">max-width</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">400px</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+
+<span style="color: #f4bf75">.hel-login-logo</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #303030">height</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">5em</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+
+<span style="color: #f4bf75">.hel-login-methods</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #aa759f">@extend</span> <span style="color: #f4bf75">.well</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+
+<span style="color: #f4bf75">.login-method</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #303030">margin-bottom</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">1em</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #f4bf75">.short-description</span> <span style="color: #d0d0d0">{</span>
+    <span style="color: #303030">margin-top</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">6px</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #d0d0d0">}</span>
+<span style="color: #d0d0d0">}</span>
+
+<span style="color: #f4bf75">.login-method__primary</span> <span style="color: #d0d0d0">{</span>
+  <span style="color: #303030">border-bottom</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">1px</span> <span style="color: #303030">solid</span> <span style="color: #303030">$brand-primary</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #303030">border-top</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">1px</span> <span style="color: #303030">solid</span> <span style="color: #303030">$brand-primary</span><span style="color: #d0d0d0">;</span>
+  <span style="color: #303030">padding-top</span><span style="color: #d0d0d0">:</span> <span style="color: #90a959">1em</span><span style="color: #d0d0d0">;</span>
+<span style="color: #d0d0d0">}</span>
+</code></pre>    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+
+    </div>
   </body>
+  <script src="javascripts/all.js"></script>
 </html>
