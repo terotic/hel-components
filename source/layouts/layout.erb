@@ -13,10 +13,12 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
     <%= stylesheet_link_tag :site %>
-    <%= javascript_include_tag :all %>
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
+  <%= javascript_include_tag :all %>
 </html>

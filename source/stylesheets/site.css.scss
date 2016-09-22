@@ -7,23 +7,33 @@
 @import 'bootstrap-social/bootstrap-social.scss';
 
 .hel-login-box {
-    margin: $padding-large-vertical auto;
-    max-width: 400px;
+  margin: $padding-large-vertical auto;
+  max-width: 400px;
+}
+
+.hel-login-logo {
+  height: 5em;
 }
 
 .hel-login-methods {
-        @extend .well;
+  @extend .well;
 }
 
 .login-method {
-    margin-bottom: 1em;
-    .short-description {
-      margin-top: 6px;
-    }
+  margin-bottom: 1em;
+  .short-description {
+    margin-top: 6px;
+  }
 }
 
 .login-method__primary {
-    border-bottom: 1px solid $brand-primary;
-    border-top: 1px solid $brand-primary;
-    padding-top: 1em;
+  border-bottom: 1px solid $brand-primary;
+  border-top: 1px solid $brand-primary;
+  padding-top: 1em;
+}
+
+
+.tab-content {
+  height: 20em;
+  overflow: auto;
 }

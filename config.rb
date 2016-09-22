@@ -28,6 +28,7 @@ end
 ###
 
 activate :autoprefixer
+activate :syntax, :line_numbers => false, :inline_theme => Rouge::Themes::Base16.new
 
 activate :sprockets
 sprockets.append_path File.join(root, "bower_components")
