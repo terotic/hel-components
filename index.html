@@ -6,32 +6,54 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Welcome to Middleman</title>
+    <title>Home</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <script src="https://use.typekit.net/qhj6crp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <link href="stylesheets/site.css" rel="stylesheet" />
+    <link href="stylesheets/helfi/theme.css" rel="stylesheet" />
   </head>
 
   <body class="index">
-    <div class="container">
-      <div class="container">
-  <div class="column-sm-12">
-    
-  </div>
-  <h1>Middleman is Running</h1>
-  <p class="doc">
-    <a href="https://middlemanapp.com" target="_blank">Read Documentation Online</a>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <div class="site-container">
+      <div class="site-navbar">
+        
+<div class="site-navigation">
+  <h3>City of Helsinki Open Software Development UI Component Library <span class="label label-primary">Beta</span></h3>
+  <hr>
+  <ul class="list-unstyled"><li class='child active'><a href="/">Home</a></li><li class='child '><a href="/bootstrap.html">Bootstrap elements</a></li><li class='child '><a href="/sign-in.html">Sign in page</a></li></ul>
 
-    </div>
-    <div class="container-fluid">
-      <div class="components-footer row">
-    
+  <hr>
+  <h6>Switch theme</h6>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <input type="radio" name="style-switch" id="js-theme-helfi" checked />
+    <label for="js-theme-helfi">hel.fi</label>
+    </li>
+<li class="list-group-item">
+    <input type="radio" name="style-switch" id="js-theme-kanslia" />
+    <label for="js-theme-kanslia">kanslia</label>
+    </li>
+  </ul>
 </div>
+      </div>
+      <div class="site-content">
+        <div class="container-fluid">
+          <div class="row">
+  <div class="col-xs-12">
+  <h1>Component Library</h1>
+  <p>
+    Collection of reusable UI components for City of Helsinki open software development projects.
+  </p>
+  </div>
+</div>
+
+        </div>
+        <div class="container-fluid">
+
+        </div>
+      </div>
     </div>
   </body>
   <script src="javascripts/all.js"></script>
