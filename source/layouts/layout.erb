@@ -12,15 +12,22 @@
     <script src="https://use.typekit.net/qhj6crp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-    <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag 'helfi/theme' %>
   </head>
 
   <body class="<%= page_classes %>">
-    <div class="container">
-      <%= yield %>
-    </div>
-    <div class="container-fluid">
-      <%= partial "partials/footer" %>
+    <div class="site-container">
+      <div class="site-navbar">
+        <%= partial "partials/navigation" %>
+      </div>
+      <div class="site-content">
+        <div class="container-fluid">
+          <%= yield %>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+      </div>
     </div>
   </body>
   <%= javascript_include_tag :all %>

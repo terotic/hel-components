@@ -1,0 +1,19 @@
+
+<div class="site-navigation">
+  <h3>City of Helsinki Open Software Development UI Component Library <span class="label label-primary">Beta</span></h3>
+  <hr>
+  <ul class="list-unstyled"><%= tree_to_html(data.tree) %></ul>
+
+  <hr>
+  <h6>Switch theme</h6>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <input type="radio" name="style-switch" id="js-theme-helfi" checked />
+    <label for="js-theme-helfi">hel.fi</label>
+    </li>
+<li class="list-group-item">
+    <input type="radio" name="style-switch" id="js-theme-kanslia" />
+    <label for="js-theme-kanslia">kanslia</label>
+    </li>
+  </ul>
+</div>

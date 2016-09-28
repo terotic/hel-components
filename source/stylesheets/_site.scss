@@ -1,10 +1,43 @@
-@charset "utf-8";
-@import "font-awesome-sprockets";
-@import "font-awesome";
-@import "bootstrap-sprockets";
-@import 'bootstrap-custom';
-@import 'bootswatch-flatly';
-@import 'bootstrap-social/bootstrap-social.scss';
+
+// Styles to accommodate sidebar navigation
+
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.site-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.site-navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2em;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100%;
+  background: $gray-lighter;
+  z-index: 200;
+}
+
+.site-content {
+  margin-left: 300px;
+  background: #fcfcfc;
+  min-height: 100%
+}
+
+.site-navigation {
+  padding: $line-height-computed;
+}
+
+// Helsinki login box
 
 .hel-login-box {
   margin: $padding-large-vertical auto;
