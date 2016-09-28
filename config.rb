@@ -23,6 +23,8 @@ configure :development do
   activate :livereload
 end
 
+set :relative_links, true
+
 ###
 # Helpers
 ###
@@ -34,7 +36,7 @@ activate :sprockets
 sprockets.append_path File.join("#{root}", "bower_components")
 
 activate :navtree do |options|
-  options.automatic_tree_updates = true # The tree.yml file will be updated automatically when source files are changed.
+  options.automatic_tree_updates = false # The tree.yml file will be updated automatically when source files are changed.
   options.ignore_files = ['sitemap.xml', 'robots.txt'] # An array of files we want to ignore when building our tree.
   options.ignore_dir = ['assets','components','partials'] # An array of directories we want to ignore when building our tree.
   options.home_title = 'Home' # The default link title of the home page (located at "/"), if otherwise not detected.

@@ -1,4 +1,4 @@
 ---
-index.html.erb: "/index.html.erb"
-bootstrap.html.erb: "/bootstrap.html.erb"
-sign-in.html.erb: "/sign-in.html.erb"
+index.html.erb: "index.html.erb"
+bootstrap.html.erb: "bootstrap.html.erb"
+sign-in.html.erb: "sign-in.html.erb"
