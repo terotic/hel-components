@@ -44,6 +44,12 @@ activate :navtree do |options|
   options.ext_whitelist = [] # If you add extensions (like '.md') to this array, it builds a whitelist of filetypes for inclusion in the navtree.
 end
 
+activate :react
+
+after_configuration do
+  sprockets.append_path File.dirname(::React::Source.bundled_path_for('react.js'))
+end
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

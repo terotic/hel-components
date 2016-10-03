@@ -20,3 +20,5 @@ gem 'sass-rails', '>= 3.2'
 gem 'font-awesome-sass'
 gem 'middleman-syntax'
 gem 'middleman-navtree'
+
+gem 'middleman-react', github: 'zoek1/middleman-react', branch: 'master'

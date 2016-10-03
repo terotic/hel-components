@@ -8,6 +8,16 @@ GIT
       net-sftp
       ptools
 
+GIT
+  remote: git://github.com/zoek1/middleman-react.git
+  revision: 5fe9a1aa8fdc88adfb362144e484acee98d6d874
+  branch: master
+  specs:
+    middleman-react (0.13.3)
+      execjs
+      middleman-core (>= 4.0)
+      react-source (~> 0.13.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -162,6 +172,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    react-source (0.13.3)
     rouge (2.0.6)
     sass (3.4.22)
     sass-rails (5.0.6)
@@ -198,6 +209,7 @@ DEPENDENCIES
   middleman-deploy!
   middleman-livereload
   middleman-navtree
+  middleman-react!
   middleman-sprockets (~> 4.0.0)
   middleman-syntax
   sass-rails (>= 3.2)
