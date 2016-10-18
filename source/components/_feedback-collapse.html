@@ -1,0 +1,37 @@
+<a class="btn btn-default feedback-trigger--collapse" role="button" data-toggle="collapse" href="#feedback-collapse" aria-expanded="false" aria-controls="feedback-collapse">
+  Anna palautetta tästä palvelusta
+</a>
+
+<div class="collapse" id="feedback-collapse">
+    <div class="well">
+        <form class="page-feedback-form" role="form" data-toggle="validator">
+                    <h4>Palautteesi on tärkeä</h4>
+                    <p>Käyttäjäpalautteella on tärkeä rooli palveluidemme kehittämisessä. Pienelläkin palautteella on merkitystä.</p>
+                <div class="form-group">
+                    <label for="options" class="control-label">Kuinka hyvin palvelu vastasi tarpeitasi? Arvostele asteikolla 1 (heikko) - 4 (hyvä)</label>
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 1
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                      </label>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputFeedbackText" class="control-label">Mitä voisimme vielä kehittää?</label>
+                    <textarea class="form-control" rows="3" name="body" id="inputFeedbackText" required data-error="Täytä tämä kenttä."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <button type="button" class="btn btn-default" data-toggle="collapse" data-target="#feedback-collapse" aria-expanded="false" aria-controls="feedback-collapse">Sulje</button>
+                <button type="submit" class="btn btn-primary">Lähetä</button>
+        </form>
+    </div>
+</div>

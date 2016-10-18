@@ -1,0 +1,52 @@
+<div class="modal page-feedback-modal" id="feedback" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <form class="page-feedback-form" role="form" data-toggle="validator">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4>Palautteesi on tärkeä</h4>
+                    <p>Käyttäjäpalautteella on tärkeä rooli palveluidemme kehittämisessä. Pienelläkin palautteella on merkitystä.</p>
+                    <hr>
+                <div class="form-group">
+                    <label for="options" class="control-label">Kuinka hyvin palvelu vastasi tarpeitasi? Arvostele asteikolla 1 (heikko) - 4 (hyvä)</label>
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 1
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                      </label>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputFeedbackText" class="control-label">Mitä voisimme vielä kehittää?</label>
+                    <textarea class="form-control" rows="3" name="body" id="inputFeedbackText" required data-error="Täytä tämä kenttä."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <hr>
+                <p>Voit jättää yhteystietosi jos haluat että otamme yhteyttä koskien palautettasi</p>
+                <div class="form-group">
+                    <label for="inputFeedbackName" class="control-label">Nimi</label>
+                    <input type="text" class="form-control" name="name" id="inputFeedbackName" placeholder="Nimi">
+                </div>
+                <div class="form-group">
+                    <label for="inputFeedbackEmail" class="control-label">Sähköposti</label>
+                    <input type="email" class="form-control" name="email" id="inputFeedbackEmail" placeholder="Sähköposti" data-error="Sähköpostiosoite on väärin.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+                <button type="submit" class="btn btn-primary">Lähetä</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 //= require jquery
 //= require bootstrap-sprockets
-
+//= require feedback-modal
 
 $(function() {
    $('#js-theme-kanslia').click(function (){

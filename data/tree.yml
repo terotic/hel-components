@@ -1,4 +1,5 @@
 ---
 index.html.erb: "index.html.erb"
 bootstrap.html.erb: "bootstrap.html.erb"
+feedback.html.erb: "feedback.html.erb"
 sign-in.html.erb: "sign-in.html.erb"
