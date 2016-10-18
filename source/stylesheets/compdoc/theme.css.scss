@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+$system-font-stack: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+$compdoc-main: #333;
+
+.compdoc {
+
+background-color: #dedede;
+color: #555;
+
+@import "bootstrap-sprockets";
+@import 'bootstrap-custom';
+
+font-family: $system-font-stack;
+}
+
+html, body {
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.site-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.site-navbar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 2em;
+  width: 300px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  min-height: 100%;
+  background: #333;
+  color: #fff;
+  z-index: 200;
+
+  a {
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+.site-content {
+  margin-left: 300px;
+  background: #fcfcfc;
+  min-height: 100%
+}
+
+.site-navigation {
+  padding: 24px;
+}
+
+.compdoc-header {
+  margin: 3em 0 1em;
+}
+
+.compdoc-content {
+  //border-top: 3em solid #dedede;
+}
+
+.example.row {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+.compdoc.row {
+  border-left: 24px solid #bababa;
+}
+
+.phase-label {
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 14px;
+  background: #b6c17d;
+  padding: .5em;
+}

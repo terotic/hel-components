@@ -12,17 +12,20 @@
     <script src="https://use.typekit.net/qhj6crp.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
+    <%= stylesheet_link_tag 'compdoc/theme', :id => 'default-css' %>
     <%= stylesheet_link_tag 'helfi/theme', :id => 'theme-css' %>
   </head>
 
   <body class="<%= page_classes %>">
     <div class="site-container">
-      <div class="site-navbar">
+      <div class="compdoc site-navbar">
         <%= partial "partials/navigation" %>
       </div>
       <div class="site-content">
         <div class="container-fluid">
-          <%= yield %>
+          <div class="compdoc-content">
+            <%= yield %>
+          </div>
         </div>
         <div class="container-fluid">
 
