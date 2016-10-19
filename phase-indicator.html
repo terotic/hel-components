@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Phase indicator</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <script src="https://use.typekit.net/qhj6crp.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <link href="stylesheets/compdoc/theme.css" rel="stylesheet" id="default-css" />
+    <link href="stylesheets/helfi/theme.css" rel="stylesheet" id="theme-css" />
+  </head>
+
+  <body class="phase-indicator">
+    <div class="site-container">
+      <div class="compdoc site-navbar">
+        
+<div class="site-navigation">
+  <h3>City of Helsinki Open Software Development UI Component Library <span class="phase-label phase-label--alpha">Alpha</span></h3>
+  <hr>
+  <ul class="list-unstyled"><li class='child '><a href="./">Home</a></li><li class='child '><a href="bootstrap.html">Bootstrap elements</a></li><li class='child '><a href="feedback.html">Feedback</a></li><li class='child '><a href="sign-in.html">Sign in page</a></li><li class='child active'><a href="phase-indicator.html">Phase indicator</a></li></ul>
+
+  <hr>
+  <h6>Switch theme</h6>
+  <ul class="list-unstyled">
+    <li>
+      <input type="radio" name="style-switch" id="js-theme-helfi" checked />
+      <label for="js-theme-helfi">hel.fi</label>
+    </li>
+    <li>
+      <input type="radio" name="style-switch" id="js-theme-kanslia" />
+      <label for="js-theme-kanslia">kanslia</label>
+    </li>
+  </ul>
+  <hr>
+  <small><a href="https://github.com/terotic/hel-components">Source in GitHub</a></small>
+</div>
+      </div>
+      <div class="site-content">
+        <div class="container-fluid">
+          <div class="compdoc-content">
+            <div class="modal page-feedback-modal" id="feedback" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+        <form class="page-feedback-form" role="form" data-toggle="validator">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4>Palautteesi on tärkeä</h4>
+                    <p>Käyttäjäpalautteella on tärkeä rooli palveluidemme kehittämisessä. Pienelläkin palautteella on merkitystä.</p>
+                    <hr>
+                <div class="form-group">
+                    <label for="options" class="control-label">Kuinka hyvin palvelu vastasi tarpeitasi? Arvostele asteikolla 1 (heikko) - 4 (hyvä)</label>
+                    <div class="btn-group btn-group-justified" data-toggle="buttons">
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> 1
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> 2
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 3
+                      </label>
+                      <label class="btn btn-default">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> 4
+                      </label>
+                    </div>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label for="inputFeedbackText" class="control-label">Mitä voisimme vielä kehittää?</label>
+                    <textarea class="form-control" rows="3" name="body" id="inputFeedbackText" required data-error="Täytä tämä kenttä."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+                <hr>
+                <p>Voit jättää yhteystietosi jos haluat että otamme yhteyttä koskien palautettasi</p>
+                <div class="form-group">
+                    <label for="inputFeedbackName" class="control-label">Nimi</label>
+                    <input type="text" class="form-control" name="name" id="inputFeedbackName" placeholder="Nimi">
+                </div>
+                <div class="form-group">
+                    <label for="inputFeedbackEmail" class="control-label">Sähköposti</label>
+                    <input type="email" class="form-control" name="email" id="inputFeedbackEmail" placeholder="Sähköposti" data-error="Sähköpostiosoite on väärin.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Sulje</button>
+                <button type="submit" class="btn btn-primary">Lähetä</button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <div class="compdoc-header">
+      <h1>Phase indicator</h1>
+      <p>Badge to show the current development phase of the project</p>
+    </div>
+  </div>
+</div>
+
+<div class="example row">
+  <div class="col-xs-12">
+    <p>
+    <span class="phase-label phase-label--discovery">Selvitys</span>
+</p>
+<p>
+    <span class="phase-label phase-label--alpha">Alfa</span>
+</p>
+<p>
+    <span class="phase-label phase-label--beta">Beta</span>
+</p>
+<p>
+    <span class="phase-label phase-label--production">Tuotanto</span>
+</p>
+<p>
+    <span class="phase-label phase-label--retirement">Poisto</span>
+</p>
+  </div>
+</div>
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <hr>
+    <h3>Dependencies</h3>
+    <dl class="dl-horizontal">
+      <dt>Bootstrap</dt>
+      <dd><a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass</a> (incl. Bootstrap js)</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <hr>
+    <h3>Code</h3>
+<div class="code">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
+    <li role="presentation"><a href="#scss" aria-controls="scss" role="tab" data-toggle="tab">SCSS</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="html">
+<pre class="highlight html"><code><span style="color: #f4bf75">&lt;p&gt;</span>
+    <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--discovery"</span><span style="color: #f4bf75">&gt;</span>Selvitys<span style="color: #f4bf75">&lt;/span&gt;</span>
+<span style="color: #f4bf75">&lt;/p&gt;</span>
+<span style="color: #f4bf75">&lt;p&gt;</span>
+    <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--alpha"</span><span style="color: #f4bf75">&gt;</span>Alfa<span style="color: #f4bf75">&lt;/span&gt;</span>
+<span style="color: #f4bf75">&lt;/p&gt;</span>
+<span style="color: #f4bf75">&lt;p&gt;</span>
+    <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--beta"</span><span style="color: #f4bf75">&gt;</span>Beta<span style="color: #f4bf75">&lt;/span&gt;</span>
+<span style="color: #f4bf75">&lt;/p&gt;</span>
+<span style="color: #f4bf75">&lt;p&gt;</span>
+    <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--production"</span><span style="color: #f4bf75">&gt;</span>Tuotanto<span style="color: #f4bf75">&lt;/span&gt;</span>
+<span style="color: #f4bf75">&lt;/p&gt;</span>
+<span style="color: #f4bf75">&lt;p&gt;</span>
+    <span style="color: #f4bf75">&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--retirement"</span><span style="color: #f4bf75">&gt;</span>Poisto<span style="color: #f4bf75">&lt;/span&gt;</span>
+<span style="color: #f4bf75">&lt;/p&gt;</span>
+</code></pre>      </div>
+    <div role="tabpanel" class="tab-pane" id="scss">
+<pre class="highlight scss"><code><span style="color: #505050">// CSS GOES HERE
+</span></code></pre>    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <div class="compdoc-header">
+      <h1>Phase indicator process</h1>
+      <p>Process element to show the current development phase of the project</p>
+    </div>
+  </div>
+</div>
+
+<div class="example row">
+  <div class="col-xs-12">
+    <h4>All active</h4>
+<ul class="phase-process">
+    <li><span class="phase-label phase-label--discovery">Selvitys</span></li>
+    <li><span class="phase-label phase-label--alpha">Alfa</span></li>
+    <li><span class="phase-label phase-label--beta">Beta</span></li>
+    <li><span class="phase-label phase-label--production">Tuotanto</span></li>
+    <li><span class="phase-label phase-label--retirement">Poisto</span></li>
+</ul>
+
+<h4>Hilight active phase</h4>
+<ul class="phase-process">
+    <li><span class="phase-label phase-label--discovery is-inactive">Selvitys</span></li>
+    <li><span class="phase-label phase-label--alpha is-inactive">Alfa</span></li>
+    <li><span class="phase-label phase-label--beta is-active">Beta</span></li>
+    <li><span class="phase-label phase-label--production is-inactive">Tuotanto</span></li>
+    <li><span class="phase-label phase-label--retirement is-inactive">Poisto</span></li>
+</ul>
+
+  </div>
+</div>
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <hr>
+    <h3>Dependencies</h3>
+    <dl class="dl-horizontal">
+      <dt>Bootstrap</dt>
+      <dd><a href="https://github.com/twbs/bootstrap-sass">Bootstrap Sass</a> (incl. Bootstrap js)</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="compdoc row">
+  <div class="col-xs-12">
+    <hr>
+    <h3>Code</h3>
+<div class="code">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
+    <li role="presentation"><a href="#scss" aria-controls="scss" role="tab" data-toggle="tab">SCSS</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="html">
+<pre class="highlight html"><code><span style="color: #f4bf75">&lt;h4&gt;</span>All active<span style="color: #f4bf75">&lt;/h4&gt;</span>
+<span style="color: #f4bf75">&lt;ul</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-process"</span><span style="color: #f4bf75">&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--discovery"</span><span style="color: #f4bf75">&gt;</span>Selvitys<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--alpha"</span><span style="color: #f4bf75">&gt;</span>Alfa<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--beta"</span><span style="color: #f4bf75">&gt;</span>Beta<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--production"</span><span style="color: #f4bf75">&gt;</span>Tuotanto<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--retirement"</span><span style="color: #f4bf75">&gt;</span>Poisto<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+<span style="color: #f4bf75">&lt;/ul&gt;</span>
+
+<span style="color: #f4bf75">&lt;h4&gt;</span>Hilight active phase<span style="color: #f4bf75">&lt;/h4&gt;</span>
+<span style="color: #f4bf75">&lt;ul</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-process"</span><span style="color: #f4bf75">&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--discovery is-inactive"</span><span style="color: #f4bf75">&gt;</span>Selvitys<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--alpha is-inactive"</span><span style="color: #f4bf75">&gt;</span>Alfa<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--beta is-active"</span><span style="color: #f4bf75">&gt;</span>Beta<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--production is-inactive"</span><span style="color: #f4bf75">&gt;</span>Tuotanto<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+    <span style="color: #f4bf75">&lt;li&gt;&lt;span</span> <span style="color: #6a9fb5">class=</span><span style="color: #90a959">"phase-label phase-label--retirement is-inactive"</span><span style="color: #f4bf75">&gt;</span>Poisto<span style="color: #f4bf75">&lt;/span&gt;&lt;/li&gt;</span>
+<span style="color: #f4bf75">&lt;/ul&gt;</span>
+
+</code></pre>      </div>
+    <div role="tabpanel" class="tab-pane" id="scss">
+<pre class="highlight scss"><code><span style="color: #505050">// CSS GOES HERE
+</span></code></pre>    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+          </div>
+        </div>
+        <div class="container-fluid">
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="javascripts/all.js"></script>
+</html>
