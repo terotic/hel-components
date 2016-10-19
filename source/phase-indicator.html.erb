@@ -1,21 +1,20 @@
 ---
-title: Feedback
+title: Phase indicator
 ---
 <%= partial "components/feedback-modal.html" %>
 
 <div class="compdoc row">
   <div class="col-xs-12">
     <div class="compdoc-header">
-      <h1>Feedback floating</h1>
-      <p>Floating feedback prompt is distracting and must be used with caution. Floating feedback is useful for test phase services where high volume of feedback is desirable.</p>
+      <h1>Phase indicator</h1>
+      <p>Badge to show the current development phase of the project</p>
     </div>
   </div>
 </div>
 
 <div class="example row">
   <div class="col-xs-12">
-    Demo button bottom right of this page
-    <%= partial "components/feedback-float.html" %>
+    <%= partial "components/phase-indicator-single.html" %>
   </div>
 </div>
 
@@ -46,19 +45,12 @@ title: Feedback
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="html">
         <% code("html") do %>
-<%= partial "components/feedback-float.html" %>
+<%= partial "components/phase-indicator-single.html" %>
         <% end %>
       </div>
     <div role="tabpanel" class="tab-pane" id="scss">
       <% code("scss") do %>
-.feedback-floating {
-  transform-origin: top right;
-  transform: rotate(90deg);
-  position: fixed;
-  bottom: 1em;
-  right: -3px;
-  z-index: 8000;
-}
+// CSS GOES HERE
       <% end %>
     </div>
   </div>
@@ -68,20 +60,18 @@ title: Feedback
 </div>
 
 
-
 <div class="compdoc row">
   <div class="col-xs-12">
     <div class="compdoc-header">
-      <h1>Feedback collapsible</h1>
-      <p>Collapsible feedback can be used inside content areas to prompt feedback on specific content.</p>
+      <h1>Phase indicator process</h1>
+      <p>Process element to show the current development phase of the project</p>
     </div>
   </div>
 </div>
 
 <div class="example row">
   <div class="col-xs-12">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem. Vivamus vehicula dignissim augue et scelerisque. Etiam quam nisi, molestie ac dolor in, tincidunt tincidunt arcu. Praesent sed justo finibus, fringilla velit quis, porta erat. Donec blandit metus ut arcu iaculis iaculis. Cras nec dolor fringilla justo ullamcorper auctor. Aliquam eget pretium velit. Morbi urna justo, pulvinar id lobortis in, aliquet placerat orci.</p>
-    <%= partial "components/feedback-collapse.html" %>
+    <%= partial "components/phase-indicator-process.html" %>
   </div>
 </div>
 
@@ -104,20 +94,20 @@ title: Feedback
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#html-2" aria-controls="html-2" role="tab" data-toggle="tab">HTML</a></li>
-    <li role="presentation"><a href="#scss-2" aria-controls="scss-2" role="tab" data-toggle="tab">SCSS</a></li>
+    <li role="presentation" class="active"><a href="#html" aria-controls="html" role="tab" data-toggle="tab">HTML</a></li>
+    <li role="presentation"><a href="#scss" aria-controls="scss" role="tab" data-toggle="tab">SCSS</a></li>
   </ul>
 
   <!-- Tab panes -->
   <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="html-2">
+    <div role="tabpanel" class="tab-pane active" id="html">
         <% code("html") do %>
-<%= partial "components/feedback-collapse.html" %>
+<%= partial "components/phase-indicator-process.html" %>
         <% end %>
       </div>
-    <div role="tabpanel" class="tab-pane" id="scss-2">
+    <div role="tabpanel" class="tab-pane" id="scss">
       <% code("scss") do %>
-// no custom scss
+// CSS GOES HERE
       <% end %>
     </div>
   </div>
