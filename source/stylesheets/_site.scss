@@ -103,6 +103,9 @@ $labelheight:     22px;
     li {
       display: table-cell;
     }
+    li:hover {
+      width: 50%;
+    }
   .phase-label {
     display: block;
   }

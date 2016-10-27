@@ -17,11 +17,12 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <div class="navbar-toggler" id="js-navbar-toggler"><span class="glyphicon glyphicon-remove"></span></div>
     <div class="site-container">
-      <div class="compdoc site-navbar">
+      <div class="compdoc site-navbar" id="js-side-nav">
         <%= partial "partials/navigation" %>
       </div>
-      <div class="site-content">
+      <div class="site-content" id="js-site-content">
         <div class="container-fluid">
           <div class="compdoc-content">
             <%= yield %>
