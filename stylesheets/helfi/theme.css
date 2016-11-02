@@ -8890,6 +8890,8 @@ input {
   width: 100%; }
   .phase-process li {
     display: table-cell; }
+  .phase-process li:hover {
+    width: 50%; }
   .phase-process .phase-label {
     display: block; }
   .phase-process li:first-child .phase-label {
