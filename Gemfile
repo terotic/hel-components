@@ -15,7 +15,7 @@ gem 'middleman-livereload'
 gem 'middleman-autoprefixer'
 gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
 
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'sass-rails', '>= 3.2'
 gem 'font-awesome-sass'
 gem 'middleman-syntax'

@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import 'bootstrap-custom';
+
+// bootstrap-social
+$line-height-computed: floor(($font-size-base * $line-height-base));
+$padding-base-vertical: $btn-padding-y;
+$padding-base-horizontal: $btn-padding-x;
+$font-size-large: $font-size-lg;
+$padding-large-vertical: $btn-padding-y-lg;
+$padding-large-horizontal: $btn-padding-x-lg;
+$font-size-small: $font-size-sm;
+$padding-small-vertical: $btn-padding-y-sm;
+$padding-small-horizontal: $btn-padding-y-sm;
+
+@import 'bootstrap-social/bootstrap-social.scss';
+@import '../site';
